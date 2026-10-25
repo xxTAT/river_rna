@@ -10,7 +10,7 @@
 
 The same features and models are then used to identify interaction-supported **well-folded structures** and **alternative structures**.
 
-![RIVER overview](/source/1.1.1/docs/images/river-overview.png)
+![RIVER overview](source/1.1.1/docs/images/river-overview.png)
 
 Manuscript: **RIVER: duplex-morphology-guided inference of RNA secondary structures and their alternatives from RNA–RNA interaction maps**
 
@@ -61,7 +61,7 @@ The data used in the manuscript are available at <https://github.com/xxTAT/RIVER
 | 6    | `step6_local_wellfolded`              | **local well-folded structures**, screened from the step 4 structures | -       | Identification of well-folded structures (*Feature-derived (local) well-folded structures*) | step 4        |
 | 7    | `step7_global_wellfolded`             | **global well-folded structures**, screened from the step 3 structure | -       | Identification of well-folded structures (*Unit-based (global) well-folded structures*) | step3         |
 
-**Algorithm, inputs and outputs of every step: [`docs/steps.md`](/source/1.1.1/docs/steps.md).**
+**Algorithm, inputs and outputs of every step: [`docs/steps.md`](source/1.1.1/docs/steps.md).**
 
 ## Usage
 
@@ -96,9 +96,9 @@ preset (-r short|medium|long|auto)  →  --config params.yaml/.json  →  comman
 
 Every value actually used is written to `step0_prepare/run_config.json`.
 
-All options and parameters, with their defaults in each preset: [`docs/parameters.md`](/source/1.1.1/docs/parameters.md).
+All options and parameters, with their defaults in each preset: [`docs/parameters.md`](source/1.1.1/docs/parameters.md).
 
-More worked examples: [`examples/QUICKSTART.md`](/source/1.1.1/examples/QUICKSTART.md).
+More worked examples: [`examples/QUICKSTART.md`](source/1.1.1/examples/QUICKSTART.md).
 
 Python API:
 
