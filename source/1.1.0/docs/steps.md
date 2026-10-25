@@ -148,7 +148,7 @@ step4_cluster_structure_predict/
 
 *Identification and evaluation of alternative structures*
 
-![alternative_structure](source/1.1.0/docs/images/alternative_structure.png)
+![alternative_structure](./images/alternative_structure.png)
 
 1. **High-entropy features**: the Shannon entropy of every nucleotide is computed within `alt_shannon_span` nt. Short-range features whose right arm contains a position with entropy ≥ the genome-wide mean are kept.
 2. **Signal filter**: off-diagonal features must have a total interaction signal above the `alt_cluster_score_percentile` percentile (top 50 % default).
@@ -185,7 +185,7 @@ step5_alternative_structure_predict/
 
 *Identification of well-folded structures (Feature-derived well-folded structures)*
 
-![local_well_folded_structure](source/1.1.0/docs/images/local_well_folded.png)
+![local_well_folded_structure](./images/local_well_folded.png)
 
 Only the representative structure of each feature (step 4) is evaluated. Short-range and long-range structures are screened **separately, in the same run**.
 
@@ -217,7 +217,7 @@ step6_local_wellfolded/
 
 *Identification of well-folded structures (Unit-based well-folded structures)*
 
-![global_well_folded_structure](source/1.1.0/docs/images/global_well_folded.png)
+![global_well_folded_structure](./images/global_well_folded.png)
 
 1. The representative structure of step 3 (`representative` in its `summary.json`) is partitioned into **structural units**: the interval closed by an outermost base pair, i.e. a pair not enclosed by any other pair. Single-stranded gaps between units are excluded.
 2. For each unit three attributes are computed from the 10 bp matrix:
