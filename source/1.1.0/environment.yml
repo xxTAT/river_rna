@@ -1,0 +1,20 @@
+# conda env create -f environment.yml && conda activate river
+# pip install .            (builds the optional Cython/OpenMP kernel)
+name: river
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.9
+  - numpy>=1.22
+  - scipy>=1.8            # manuscript: 1.11.4
+  - pyyaml
+  - cython>=3.0
+  - c-compiler
+  - llvm-openmp          # macOS OpenMP
+  - rnastructure=6.3     # partition-smp / bipartition-smp / ProbabilityPlot / Fold-smp (manuscript: v6.3)
+  - viennarna=2.6.4      # RNAcofold (manuscript: v2.6.4)
+  - bedtools=2.30.0      # signal clustering (manuscript: v2.30.0)
+  - openjdk>=8           # only needed for the juicer_tools backend
+  - juicertools>=2.20.00
+  - pip

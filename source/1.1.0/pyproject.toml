@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "cython>=3.0", "numpy>=1.22"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "river-rna"
+version = "1.1.0"
+description = "RIVER: an integrated framework for inferring RNA secondary structures and their alternatives from RNA–RNA interaction maps"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.22", "scipy>=1.8", "pyyaml>=6"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+river = "river.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+river = ["*.pyx"]

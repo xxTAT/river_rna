@@ -1,0 +1,7 @@
+include README.md LICENSE environment.yml
+include src/river/*.pyx
+recursive-include examples *
+recursive-include tests *.py
+recursive-include docs/images *.svg *.png *.jpg *.jpeg
+recursive-include docs *.md
+global-exclude *.c *.so *.pyd

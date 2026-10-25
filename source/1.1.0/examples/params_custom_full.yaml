@@ -1,0 +1,32 @@
+# every key of RiverParams may be overridden; unspecified keys keep the preset
+low_res: 10
+mid_res: 5
+high_res: 1
+score_res: [10, 5, 1]
+norm_order: [KR, NONE, VC_SQRT, VC]
+partition_mode: whole      # whole | window
+window: 5000
+overlap: 3000
+canny_tlf: 0.01
+canny_thf: 0.03
+rri_ctf: 0.01
+diag_zero_width: 10
+max_pair_distance: 1600    # null = no limit
+score_mask: true
+score_mask_pvalue: 0.75
+score_mask_percentile: 98
+score_clip_percentile: 99
+unit_score_percentile: 96
+domain_split: true
+domain_max_len: 600
+domain_edge_len: 100
+domain_gap_len: 200
+constraint_require_stack: true
+cluster_max_distance: 3000     # step4/5: above this span a feature is long-range
+cluster_diagonal_gap: 10       # step4/5: arm gap below which a feature is diagonal
+cofold_pad: 2                  # nt added to each RNAcofold fragment
+cofold_max_retry: 5
+alt_shannon_span: 3000         # step5: window of the local Shannon entropy
+alt_cluster_score_percentile: 50
+alt_conflict_slop: 10
+alt_conflict_overlap_fraction: 0.5
